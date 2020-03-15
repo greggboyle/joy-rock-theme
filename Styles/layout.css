@@ -1,0 +1,753 @@
+/*******************************************************
+* _INIT.SCSS
+* =================================================
+*
+* This file contains intitial setup and configuration
+* data for all site stylesheets. It includes
+* Site-wide variables, mixins, & functions
+*
+* IMPORTING ADDITIONAL CONFIGURATION STYLESHEETS:
+* ----------------------------------------------
+* All other sitewide includes should be imported at
+* at the end of this file. As this file is imported
+* into all other stylesheets, anything imported here
+* will likewise be imported into those stylesheets.
+*
+* ==================== WARNING! =======================
+* DO NOT INCLUDE ANY ACTUAL STYLES THAT WILL GET OUTPUT
+* TO THE FINAL CSS IN THIS FILE OR ANY FILE IMPORTED IN
+* THIS FILE! ANY SUCH STYLES WILL END UP BEING DEFINED
+* IN EVERY OUTPUT CSS FILE THAT IMPORTS THIS FILE (I.E.
+* ALL STYLESHEET FILES SITE WIDE).
+********************************************************/
+/* TYPOGRAPHY
+   ========== */
+/* Define the path to use for ProximaNova fonts */
+/* Define the path to use for ProximaNovaCondensed fonts */
+/* Define the path to use for TisaPro fonts */
+/*$ProximaNova: 				join(("ProximaNova", "proxima-nova"), $PrimaryCopyFont, comma); */
+/* COLORS
+   ====== */
+/*Define the path to use for font awesome fonts */
+/* MIXINS
+   ====== */
+/* ADDITIONAL CONFIGURATION STYLESHEETS
+*  ==================================== */
+/*	Use this file to change/override bootstrap variables.
+*	Variables should be defined at the top of the file,
+*	with the bootstrap import coming at the end.
+*********************************************************/
+/* Load icon fonts from this directory. */
+/* default text settings */
+/* default settings for headings and titles */
+/* DO NOT ADD VARIABLES BELOW THIS LINE */
+/**********************************************************
+* _REESPONSIVE.SCSS
+*	This file defines variables, functions, and mixins for
+*	use in targeting breakpoints for mobile devices.
+*
+*	The variables and functions defined here should rarely
+*	be accessesd directly. Instead, the media query mixins
+*	should be used to target specific device(s).
+\**********************************************************/
+/* $screen -
+ *	 A Sass Map to define the min and max screen sizes
+ *   for each device type supported. Used by the
+ *	 screen-size function to retrieve breakpoints for
+ *	 media query mixins */
+/* FUNCTIONS
+ * =========
+ *
+ * Functions are used to return a specific screen size from
+ * the $screen map */
+/* @screen-size
+ *	 A function to retrieve a screen breakpoint value from the
+ *	 $screen map for use in a media query mixin */
+/* MEDIA QUERY MIXINS
+ * ==================
+ *
+ * A set of mixins to create media queries that target a specific
+ * device or set of devices. These mixins create the appropriate
+ * media query, and then include the mixin content inside the media query.
+ *
+ * USAGE:
+ *   @include <mixin-name> {
+ * 	     //Styles for the media query here. For example:
+ *       font-size: 0.75em;
+ *       background: url('phone-bg.png');
+ *   }
+ */
+@font-face {
+  font-family: "TisaPro";
+  src: url("/Themes/SECC2019/Assets/fonts/tisa-pro/FF-TisaPro.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "TisaPro";
+  src: url("/Themes/SECC2019/Assets/fonts/tisa-pro/FF-TisaPro-Ita.otf");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "TisaPro";
+  src: url("/Themes/SECC2019/Assets/fonts/tisa-pro/FF-TisaPro-Thin.otf");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: "TisaPro";
+  src: url("/Themes/SECC2019/Assets/fonts/tisa-pro/FF-TisaPro-ThinIta.otf");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: "TisaPro";
+  src: url("/Themes/SECC2019/Assets/fonts/tisa-pro/FF-TisaPro-Light.otf");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: "TisaPro";
+  src: url("/Themes/SECC2019/Assets/fonts/tisa-pro/FF-TisaPro-LightIta.otf");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
+  font-family: "TisaPro";
+  src: url("/Themes/SECC2019/Assets/fonts/tisa-pro/FF-TisaPro-Medi.otf");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: "TisaPro";
+  src: url("/Themes/SECC2019/Assets/fonts/tisa-pro/FF-TisaPro-MediIta.otf");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: "TisaPro";
+  src: url("/Themes/SECC2019/Assets/fonts/tisa-pro/FF-TisaPro-Bold.otf");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "TisaPro";
+  src: url("/Themes/SECC2019/Assets/fonts/tisa-pro/FF-TisaPro-BoldIta.otf");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: "TisaPro";
+  src: url("/Themes/SECC2019/Assets/fonts/tisa-pro/FF-TisaPro-Xbold.otf");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: "TisaPro";
+  src: url("/Themes/SECC2019/Assets/fonts/tisa-pro/FF-TisaPro-XboldIta.otf");
+  font-weight: 800;
+  font-style: italic; }
+
+@font-face {
+  font-family: "TisaPro";
+  src: url("/Themes/SECC2019/Assets/fonts/tisa-pro/FF-TisaPro-Black.otf");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: "TisaPro";
+  src: url("/Themes/SECC2019/Assets/fonts/tisa-pro/FF-TisaPro-BlackIta.otf");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova/ProximaNova-Regular.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova/ProximaNova-RegularIt.otf");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova/ProximaNova-Thin.otf");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova/ProximaNova-ThinIt.otf");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova/ProximaNova-Light.otf");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova/ProximaNova-LightIt.otf");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova/ProximaNova-Semibold.otf");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova/ProximaNova-SemiboldIt.otf");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova/ProximaNova-Bold.otf");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova/ProximaNova-BoldIt.otf");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova/ProximaNova-Extrabld.otf");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova/ProximaNova-ExtrabldIt.otf");
+  font-weight: 800;
+  font-style: italic; }
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova/ProximaNova-Black.otf");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova/ProximaNova-BlackIt.otf");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: "ProximaNovaCond";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova-condensed/ProximaNovaCond-Regular.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNovaCond";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova-condensed/ProximaNovaCond-RegularIt.otf");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "ProximaNovaCond";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova-condensed/ProximaNovaCond-Thin.otf");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNovaCond";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova-condensed/ProximaNovaCond-ThinIt.otf");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: "ProximaNovaCond";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova-condensed/ProximaNovaCond-Light.otf");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNovaCond";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova-condensed/ProximaNovaCond-LightIt.otf");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
+  font-family: "ProximaNovaCond";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova-condensed/ProximaNovaCond-Semibold.otf");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNovaCond";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova-condensed/ProximaNovaCond-SemiboldIt.otf");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: "ProximaNovaCond";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova-condensed/ProximaNovaCond-Bold.otf");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNovaCond";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova-condensed/ProximaNovaCond-BoldIt.otf");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: "ProximaNovaCond";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova-condensed/ProximaNovaCond-Extrabld.otf");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNovaCond";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova-condensed/ProximaNovaCond-ExtrabldIt.otf");
+  font-weight: 800;
+  font-style: italic; }
+
+@font-face {
+  font-family: "ProximaNovaCond";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova-condensed/ProximaNovaCond-Black.otf");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNovaCond";
+  src: url("/Themes/SECC2019/Assets/fonts/proxima-nova-condensed/ProximaNovaCond-BlackIt.otf");
+  font-weight: 900;
+  font-style: italic; }
+
+/* Typography */
+h1:not(.modal-title), h2:not(.modal-title), h3:not(.modal-title), h4:not(.modal-title), h5:not(.modal-title), h6:not(.modal-title) {
+  color: #000000;
+  margin-top: 0; }
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #000000; }
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  color: #222222;
+  font-size: 60%; }
+
+h1, .h1 {
+  font-size: 4rem;
+  font-weight: normal;
+  line-height: 1.1; }
+
+h2, .h2 {
+  font-size: 3.5rem;
+  font-weight: normal;
+  line-height: 1.1; }
+
+h3, .h3 {
+  font-size: 2.75rem;
+  font-weight: normal;
+  line-height: 1.4; }
+
+h4, .h4 {
+  font-size: 2.25rem;
+  font-weight: normal;
+  line-height: 1.4; }
+
+h5, .h5 {
+  font-size: 1.875rem;
+  font-weight: normal;
+  line-height: 1.4; }
+
+h6, .h6 {
+  font-size: 1.25rem;
+  font-weight: normal;
+  line-height: 1.1; }
+
+code {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #FFFFFF;
+  border-radius: .2rem;
+  padding: .1rem .3rem .2rem; }
+
+em,
+li {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000000; }
+  em > a,
+  li > a {
+    color: #000000; }
+    em > a:hover,
+    li > a:hover {
+      color: black; }
+
+label {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: .25rem; }
+
+i {
+  line-height: 1; }
+
+/* Paragraph */
+p {
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+/* Links */
+a {
+  color: #222222;
+  text-decoration: none; }
+  a:focus, a:hover {
+    color: black;
+    text-decoration: none; }
+  a:focus {
+    outline: none; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.letter-space {
+  letter-spacing: 2px; }
+
+.big-letter-space {
+  letter-spacing: 6px; }
+
+/* @import '_lib/site-navigation'; */
+/******************************************************
+* LAYOUT.SCSS
+*	Main site layout styles go in this file.
+*	Iclude styles for the site header and footer,
+*	main body and sidebars, etc.
+*	All styles for components/sections that are used
+*	site wide.
+\******************************************************/
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; }
+
+#sub-connect-menu {
+  display: none; }
+
+#PageCanvas {
+  background: #FFFFFF; }
+
+#SiteHeader {
+  display: none; }
+
+section:not(.parallax),
+#PageBody > section,
+#AdminPageBody > section {
+  position: relative;
+  padding-top: 5em;
+  padding-bottom: 5em; }
+  @media (max-width: 767px) {
+    section:not(.parallax),
+    #PageBody > section,
+    #AdminPageBody > section {
+      padding-top: 2em;
+      padding-bottom: 2em; } }
+  section:not(.parallax)#PageHeader,
+  #PageBody > section#PageHeader,
+  #AdminPageBody > section#PageHeader {
+    padding-top: 0; }
+  section:not(.parallax) .outline,
+  #PageBody > section .outline,
+  #AdminPageBody > section .outline {
+    padding: 2em;
+    border: 1px solid #efefef;
+    margin-bottom: 1em; }
+  section:not(.parallax).with-header,
+  #PageBody > section.with-header,
+  #AdminPageBody > section.with-header {
+    padding-top: 0; }
+    section:not(.parallax).with-header header,
+    #PageBody > section.with-header header,
+    #AdminPageBody > section.with-header header {
+      margin-bottom: 5em;
+      background: #383735;
+      color: #ffffff;
+      padding: 1em 0;
+      text-align: center; }
+      @media (max-width: 767px) {
+        section:not(.parallax).with-header header,
+        #PageBody > section.with-header header,
+        #AdminPageBody > section.with-header header {
+          margin-bottom: 2em; } }
+      section:not(.parallax).with-header header h1,
+      #PageBody > section.with-header header h1,
+      #AdminPageBody > section.with-header header h1 {
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.4); }
+
+#Breadcrumbs, #PageBreadCrumbs {
+  padding: .4em 0;
+  font-size: .9em; }
+  #Breadcrumbs .breadcrumb, #PageBreadCrumbs .breadcrumb {
+    background-color: none; }
+  #Breadcrumbs li, #PageBreadCrumbs li {
+    padding: 0; }
+    #Breadcrumbs li + li::before, #PageBreadCrumbs li + li::before {
+      content: "> "; }
+    #Breadcrumbs li a, #PageBreadCrumbs li a {
+      color: inherit; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "ProximaNova", "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+#SiteFooter {
+  background: rgba(124, 124, 124, 0.18); }
+  #SiteFooter ul {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none; }
+    #SiteFooter ul ul {
+      margin-left: 1em; }
+    #SiteFooter ul + ul {
+      margin-top: 0.7em; }
+  #SiteFooter section.footer-menu {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    color: #000000; }
+    #SiteFooter section.footer-menu p {
+      margin: 0; }
+    #SiteFooter section.footer-menu .menu > li > a,
+    #SiteFooter section.footer-menu :not(li) > a {
+      color: #000000; }
+    #SiteFooter section.footer-menu .menu li,
+    #SiteFooter section.footer-menu .campus-list {
+      margin-top: .5em; }
+  #SiteFooter section.partners {
+    background: rgba(124, 124, 124, 0.68);
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+    font-weight: 600; }
+    #SiteFooter section.partners li {
+      padding: 0px 10px; }
+      #SiteFooter section.partners li a {
+        color: #FFFFFF; }
+    @media (min-width: 992px) {
+      #SiteFooter section.partners li {
+        border-right: 1px solid #FFFFFF; }
+        #SiteFooter section.partners li:last-child {
+          border: 0; } }
+    @media (max-width: 991px) {
+      #SiteFooter section.partners li {
+        padding: 5px 10px; } }
+    @media (max-width: 480px) {
+      #SiteFooter section.partners li {
+        display: block; } }
+  #SiteFooter section.signoff {
+    background: #FFFFFF;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-size: 1.5rem; }
+    #SiteFooter section.signoff p {
+      font-size: 1.5rem; }
+    #SiteFooter section.signoff .se-brand-logo {
+      max-width: 300px; }
+    #SiteFooter section.signoff .pull-right {
+      text-align: right; }
+      #SiteFooter section.signoff .pull-right p {
+        font-size: 1.5rem; }
+    #SiteFooter section.signoff .social {
+      text-align: right; }
+      #SiteFooter section.signoff .social i {
+        font-size: 3.75rem; }
+    @media (max-width: 767px) {
+      #SiteFooter section.signoff .social {
+        text-align: center; }
+      #SiteFooter section.signoff .pull-left,
+      #SiteFooter section.signoff .pull-right {
+        float: none !important;
+        text-align: center; } }
+
+.secc-content {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; }
+  .secc-content iframe {
+    width: 100%;
+    border: none; }
+
+#PageBody > .secc-content {
+  margin-top: 2.5em; }
+
+#PageHeader {
+  color: white; }
+  @media (min-width: 768px) {
+    #PageHeader {
+      min-height: 360px; } }
+  #PageHeader header {
+    margin: 4em 0 5em 0;
+    text-align: center; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      #PageHeader header {
+        margin: 5em 0 6em 0; } }
+    @media (max-width: 767px) {
+      #PageHeader header {
+        margin: 2em 0 2.5em 0; } }
+    #PageHeader header h1 {
+      font-size: 7em;
+      margin-left: -40%; }
+      @media (min-width: 768px) and (max-width: 991px) {
+        #PageHeader header h1 {
+          font-size: 6em;
+          margin-left: -50%; } }
+      @media (max-width: 767px) {
+        #PageHeader header h1 {
+          margin: 0 auto;
+          font-size: 5em; } }
+  #PageHeader .next-info {
+    color: black;
+    font-size: .9em;
+    font-family: "proxima-nova-n7", "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    overflow: visible;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1.5em; }
+    #PageHeader .next-info img {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 200px; }
+    #PageHeader .next-info .mobile-intro {
+      display: none; }
+    @media (min-width: 1200px) {
+      #PageHeader .next-info {
+        width: 25%; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      #PageHeader .next-info {
+        width: 46%; }
+        #PageHeader .next-info .description {
+          display: inline; } }
+    @media (max-width: 767px) {
+      #PageHeader .next-info {
+        position: relative;
+        width: 100%;
+        float: none;
+        text-align: left; }
+        #PageHeader .next-info img {
+          margin: 0;
+          float: left;
+          width: 80%;
+          max-width: 100px; }
+        #PageHeader .next-info .mobile-intro {
+          display: inline;
+          text-align: right; }
+        #PageHeader .next-info .description {
+          display: none; } }
+  #PageHeader.parallax {
+    /* Set a specific height */
+    /* Create the parallax scrolling effect */
+    z-index: 0;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    /* safari may need this */
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    box-sizing: content-box;
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%; }
+    @media (max-width: 767px) {
+      #PageHeader.parallax {
+        font-size: 0.7em; } }
+    #PageHeader.parallax h1 {
+      font-size: 6em;
+      text-transform: uppercase;
+      padding: 0.2em 0; }
+      @media (min-width: 768px) and (max-width: 991px) {
+        #PageHeader.parallax h1 {
+          font-size: 5em;
+          padding: 0.1em 0; } }
+      @media (max-width: 767px) {
+        #PageHeader.parallax h1 {
+          font-size: 4em; } }
+
+/*********************************************************************
+*  PHONES
+*  ======
+*
+*   Styles in this section apply to phones and other small devices
+**********************************************************************/
+@media (max-width: 767px) {
+  #DocumentWrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+  /*#MobileNav {
+		position	: absolute;
+		top			: 0px;
+		left		: 0px;
+		width		: $MobileMenuWidth;
+		height		: 100%;
+		overflow-y	: scroll;
+		z-index		: 1;
+		background	: $SiteNavBackground;
+		color 		: $SiteNavColor;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+
+	#MegaMenus {
+		display: none !important;
+	}*/
+  #PageCanvas {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height: 100%;
+    z-index: 2;
+    -webkit-transition: left 500ms ease-out;
+    -moz-transition: left 500ms ease-out;
+    -o-transition: left 500ms ease-out;
+    -ms-transition: left 500ms ease-out;
+    transition: left 500ms ease-out;
+    -webkit-box-shadow: -2px 0px 5px 0px rgba(34, 34, 34, 0.75);
+    -moz-box-shadow: -2px 0px 5px 0px rgba(34, 34, 34, 0.75);
+    box-shadow: -2px 0px 5px 0px rgba(34, 34, 34, 0.75);
+    /*body.menu-open & {
+			left	: $MobileMenuWidth;
+			position: fixed;
+		}*/ } }
